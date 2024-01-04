@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "ES2020",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2020",
+        "noImplicitAny": true,
+        "moduleResolution": "Bundler",
+        "sourceMap": true,
+        "outDir": "../../public/worker/dummyData",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "include": ["./src"]
+}

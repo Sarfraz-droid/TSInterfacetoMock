@@ -1,0 +1,28 @@
+.monaco-editor {
+    @apply rounded-xl;
+}
+
+.monaco-editor .overflow-guard {
+    @apply rounded-xl;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f12c;
+    @apply rounded-xl;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    @apply rounded-xl;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
