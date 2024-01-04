@@ -1,4 +1,3 @@
-import React from 'react'
 import { TEXT } from '../../constants/text'
 
 function Header() {
