@@ -3,7 +3,7 @@ import { SiTypescript } from 'react-icons/si'
 import { FaGithub } from "react-icons/fa"
 function Header() {
     return (
-        <div className="pt-10 w-full">
+        <div className="pt-2 w-full">
             <div className="flex gap-2 justify-between px-5">
                 <div
                     className='flex gap-2'
@@ -18,12 +18,12 @@ function Header() {
                     className='flex gap-2'
                 >
                     <button
-                        className='btn btn-ghost btn-lg rounded-full h-16 w-16'
+                        className='btn btn-ghost btn-lg rounded-full h-20 w-20'
                         onClick={() => {
                             window.open('https://github.com/Sarfraz-droid/TSInterfacetoMock', '_blank')
                         }}
                     >
-                        <FaGithub className="w-12 h-12 p-2" />
+                        <FaGithub className=" w-12 h-12 " />
                     </button>
                 </div>
             </div>
