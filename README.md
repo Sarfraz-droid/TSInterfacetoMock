@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+<a name="readme-top"></a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<br />
+<div align="center">
+  <a href="https://github.com/Sarfraz-droid/ts-mocker">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="Logo" width="150" >
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  </a>
 
-## Expanding the ESLint configuration
+  <h3 align="center">TS-Mocker</h3>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  <p align="center">
+    Build Mock Data from Typescript Interfaces
+    <br />
+    <br />
+    <a href="https://ts-interface-to-mock.vercel.app">View Demo</a>
+    ·
+    <a href="https://github.com/Sarfraz-droid/ts-mocker/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Sarfraz-droid/ts-mocker/issues">Request Feature</a>
+  </p>
+</div>
 
--   Configure the top-level `parserOptions` property like this:
+---
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+![Screenshot 2024-01-06 020356](https://github.com/Sarfraz-droid/ts-mocker/assets/73013838/f14d6064-f7c7-4d38-a2ba-499c8e9df1d2)
 
--   Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
--   Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
--   Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
