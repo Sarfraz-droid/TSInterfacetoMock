@@ -15,6 +15,7 @@ export const REGEX = {
     record: recordRegex,
     special: specialRegex,
     parameter: paramRegex,
+    SPECIAL_CHARACTER_PARSER: /[^\w\d\n]/,
     PROPERTY_NAME: /(\w+)<(.+)>/,
     GENERATE_PROPERTY_REGEX: ({
         index,

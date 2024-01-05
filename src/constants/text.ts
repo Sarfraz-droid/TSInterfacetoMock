@@ -1,3 +1,4 @@
 export const TEXT = {
-    TITLE: 'Typescript Interface To Mock Data Generator',
+    TITLE: 'TS-MOCKER',
+    SUBTITLE: 'Typescript Interface To Mock Data Generator',
 }

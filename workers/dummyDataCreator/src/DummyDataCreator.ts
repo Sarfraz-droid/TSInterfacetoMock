@@ -65,15 +65,15 @@ export class DummyDataCreator {
             default:
         }
 
-        switch (typeof type) {
-            case 'string':
+        switch (true) {
+            case typeof type == 'string' && this.types[type] != undefined:
                 return this.createDummyData(type)
-            case 'object':
+            case typeof type == 'object':
                 return this.interfaceDataGenerator(type)
             default:
         }
 
-        return null
+        return type
     }
 
     createDummyData(IName: string) {

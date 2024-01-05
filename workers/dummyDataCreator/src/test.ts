@@ -1,11 +1,12 @@
-// import { Person } from "./types"
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { DataGraphGenerator } from './DataGraphGenerator'
 import fs from 'fs'
 import { DummyDataCreator } from './DummyDataCreator'
 import logger from 'logger'
 import path from 'path'
 
-const dirPrefix = 'workers\\dummyDataCreator\\src'
+const dirPrefix = './workers/dummyDataCreator/src'
 
 const LOGPATH = {
     development: path.resolve(dirPrefix, 'development.log'),
@@ -39,7 +40,7 @@ const main = async () => {
     fs.writeFileSync(path.resolve('./dummy.json'), JSON.stringify(arr, null, 2))
 
     const dummyData = new DummyDataCreator(generator.map, generator.types)
-    resultLog.log(dummyData.createDummyData('TaskInfo'))
+    resultLog.log(dummyData.createDummyData('Person'))
 }
 
 main()

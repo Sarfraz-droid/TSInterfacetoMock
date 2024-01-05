@@ -1,6 +1,7 @@
 import ts from 'typescript'
 import _ from 'lodash'
 import { IType, TypeKind } from './types/index'
+import { REGEX } from './utils'
 
 export class DataGraphGenerator {
     map: any = {}
@@ -19,8 +20,6 @@ export class DataGraphGenerator {
 
         sourcefile.forEachChild((node: ts.Node) => {
             if (node.kind == ts.SyntaxKind.InterfaceDeclaration) {
-                // log.info(`Interface: ${node.getText()}`)
-                // console.log(node.kind, node.getText())
                 this.buildInterface(node, '')
             } else if (node.kind == ts.SyntaxKind.EnumDeclaration) {
                 this.buildEnum(node, '')
@@ -230,7 +229,6 @@ export class DataGraphGenerator {
                     )
                     break
                 case ts.SyntaxKind.TypeLiteral:
-                    // console.log("buildProperty ",child.getText())
                     properties = _.update(properties, `${keyword}`, () =>
                         this.buildInterface(child, keyword)
                     )
@@ -239,7 +237,7 @@ export class DataGraphGenerator {
                     const union = child
                         .getText()
                         .split('|')
-                        .map((str) => str.trim())
+                        .map((str: string) => str.replace(new RegExp(REGEX.SPECIAL_CHARACTER_PARSER, 'g'), '').trim())
                     properties = _.update(properties, `${keyword}`, () => union)
                     break
                 case ts.SyntaxKind.TupleType:

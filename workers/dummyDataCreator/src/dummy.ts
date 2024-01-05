@@ -1,4 +1,10 @@
-export interface Person<T = string, W = number> {
-    name: T
-    age: W
+enum GENDER {
+    MALE="MALE",
+    GENDER="GENDER"
+}
+
+interface Person {
+    name: string;
+    age: number;
+    gender: GENDER;
 }

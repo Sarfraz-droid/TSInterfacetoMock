@@ -1,0 +1,17 @@
+[
+  {
+    "name": "GENDER",
+    "value": {
+      "MALE": "MALE",
+      "GENDER": "GENDER"
+    }
+  },
+  {
+    "name": "Person",
+    "value": {
+      "name": "string",
+      "age": "number",
+      "gender": "GENDER"
+    }
+  }
+]
